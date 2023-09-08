@@ -1,6 +1,6 @@
 import numpy as np
 
-# 定义MLP网络结构
+# 定义MLP网络结构new
 input_size = 10
 hidden_size = 20
 output_size = 5
@@ -56,3 +56,8 @@ for i in range(1000):
     mlp.backward(X, y_true, y_pred, h)
     if i % 100 == 0:
         print(f"Epoch {i}: Loss = {loss}")
+        
+og = (yp-pt)/len(y)
+w2g = np.dot(h.T, og)
+b2g = np.sum(w2g, axis=0)
+hg = np.dot(og, w2.T)

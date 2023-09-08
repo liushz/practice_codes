@@ -1,4 +1,4 @@
-# A mlp network writen by chatgpt
+# A mlp network written by chatgpt
 import torch
 import torch.nn as nn
 import torch.optim as optim
